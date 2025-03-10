@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detection Result</title>
+</head>
+<body>
+    <h2>Detection Results</h2>
+    {% for result in results %}
+        <p>{{ result.label }} - Confidence: {{ result.confidence }}%</p>
+    {% endfor %}
+    <br>
+    <img src="{{ detected_img }}" alt="Detected Face">
+    <br>
+    <a href="/">Go Back</a>
+</body>
+</html>
